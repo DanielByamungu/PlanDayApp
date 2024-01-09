@@ -1,0 +1,23 @@
+.bookmarks-wrapper{
+    height:100%;
+}
+.bookmark-tile{
+    display:flex;
+    background: rgba(0, 0, 0, 0.377);
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+
+    width:60px;
+    height:60px;
+
+}
+.bookmark-tile img{
+    max-width:27px ;
+}
+
+.bookmark-tiles-container{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}

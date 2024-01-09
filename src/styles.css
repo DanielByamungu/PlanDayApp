@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Material+Icons+Outlined');
+
+html{
+    font-family:'Inter',sans-serif;
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1{
+    font-size:48px;
+}
+h2{
+    font-size:40px;
+    margin-bottom:2px;
+}
+.container{
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-flex;
+    padding:6px 12px;
+    background:rgba(0, 0, 0, 0.678);
+    color:white;
+    gap:10px;
+    font-size:16px;
+    text-decoration:none;
+    align-items: center;
+    cursor: pointer;
+    font-family:inherit ;
+    border:none;
+
+}
+
+.btns-container{
+    margin-top:20px;
+    display:flex;
+    border-radius:6px;
+
+}
+.btns-containter.btns-centered{
+justify-content: center;
+}
+
+.btns-container .align-end{
+    margin-left:auto;
+}
+
+.has-blurred-white-bg{
+    background:rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(14px);
+   
+}
+
+.textbox, 
+.textarea{
+    display:block;
+    font-size:15px;
+    font-family:inherit;
+    padding:5px 10px;
+    width: 100%;
+    border:2px solid rgba(255, 255, 255, 0.692);
+}
+
+.textbox:hover{
+    background: rgba(255, 255, 255, 0.952);
+}
+
+.textarea{
+    resize:vertical;
+}
+.form-field{
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+.notes-wrapper{
+    height:100%;
+    overflow-y: auto;
+}
+
+.note-card{
+    background-color: rgba(0, 0, 0, 0.274);
+    color:white;
+    border-radius: 4px;
+    padding:12px;
+    cursor:pointer;
+    transition: 0.1s;
+    
+
+}
+
+.note-card:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter:blur(2px);
+}
+
+.note-card-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.note-cart-content{
+    margin-top:7px;
+}
+
+
+.btn:hover{
+    background:rgba(0, 0, 0, 0.836);
+}
+
+.btn:active{
+    background: rgba(0, 0, 0, 0.856);
+}
+
+
+.btns-container.btns-centered{
+    justify-content:center;
+}
+.add-btn i{
+    margin:3px;
+    margin-left:-2px;
+}
+.note-card{
+    margin-bottom: 10px;
+}

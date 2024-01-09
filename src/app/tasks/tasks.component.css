@@ -1,0 +1,46 @@
+.tasks-wrapper{
+    height:100%;
+    overflow-y:auto;
+  
+}
+
+.task{
+    display:flex;
+    background-color:rgba(0, 0, 0, 0.26);
+    border-radius:25px;
+    text-align: center;
+
+    padding:10px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.task-text{
+    color:white;
+}
+.check-box{
+    padding:4px;
+    border:2px solid white;
+    border-radius:50%;
+    margin-right:15px;
+}
+.i{
+    font-size: 12px;
+    opacity:0px;
+}
+
+.check-box:hover {
+    border-color:transparent;
+    background-color: white;
+}
+
+
+
+
+.task.completed .check-box{
+  background-color: rgb(63, 139, 63);
+  border-color:transparent;
+}
+.todo-text, .check-box{
+    transition:0.12s;
+}

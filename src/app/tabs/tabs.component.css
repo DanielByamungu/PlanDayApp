@@ -1,0 +1,85 @@
+.tabs{
+    background-color:rgba(3, 3, 3, 0.082);
+    display:flex;
+    gap:14px;
+    border-radius: 12px;
+    padding:10px;
+    backdrop-filter:blur(3px);
+}
+
+
+.tab-tile{
+    display:flex;
+    background-color:linear-gradient(45deg,#a5f8f8, #d3d2fd);
+    padding:15px;
+    cursor: pointer;  
+    transition: all 0.2s ; 
+}
+
+i{
+    color:#222;     
+}
+
+.tab.selected .tab-tile{
+    transform:translateY(-25px);
+    transition-duration:0.4s;
+    transition-timing-function:cubic-bezier(0.175,0.885,0.32,0.275);
+}
+/*STYLES FOR THE TAB TILE BACKGROUND*/
+.tab-tile::before{
+    content: ' ';
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    border-radius: 10px;
+    top:0;
+    left:0;
+    /*background:linear-gradient(45deg,#a5eef8,#f4d2fd);*/
+}
+.tab{
+    position:relative;
+    text-decoration:none;
+}
+
+.bookmarks-tab .tab-tile::before{
+
+    background:linear-gradient(45deg,#d0a5f8,#bffdde) ;
+}
+
+.tasks-tab .tab-tile::before{
+    background:linear-gradient(45deg,#a5f8ca,#f4d2fd) ;
+    
+}
+
+.notes-tab .tab-tile::before{
+    background:linear-gradient(45deg,#a5eef8,#f4d2fd) ;
+    
+}
+
+.tab-tile:hover::before{
+    transform:scale(1.2);
+    opacity:1;
+}
+
+.tab.selected .tab-tile::before {
+    opacity:1;
+    transform:scale(1.1);
+    border-radius:50%;
+}
+
+/*END OF TAB TILE BACKGROUND SHAPE STYLES*/
+
+.tab.selected::after{
+    content:'';
+    position:absolute;
+    bottom:0px;
+    left:0;
+    right:0;
+    margin:auto;
+    height:4px;
+    width:60%;
+    transition:all 0.2;
+    background-color:rgba(247, 243, 243, 0.959);
+    opacity: 1;
+}

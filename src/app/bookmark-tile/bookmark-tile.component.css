@@ -1,0 +1,29 @@
+.bookmark-tile{
+    display:flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.377);
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    cursor:pointer;
+    overflow:auto;
+
+    width:70px;
+    height:70px;
+
+}
+
+.bookmark-tile:hover{
+    background:rgba(0, 0, 0, 0.425);
+}
+.bookmark-tile img{
+    max-width:27px ;
+}
+.tile-text{
+    color:white;
+}
+.bookmark-tiles-container{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
